@@ -1,0 +1,506 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User: Google Login Saga should call the LogInError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Google Login Saga should call the LogInError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Google Login Saga should dispatch the LogInSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Google Login Saga should dispatch the LogInSuccess action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Google Login Saga should do the callback 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Google Login Saga should do the callback 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Login Saga should call the LogInError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Login Saga should call the LogInError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Login Saga should dispatch the LogInSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Login Saga should dispatch the LogInSuccess action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Login Saga should do the callback 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Login Saga should do the callback 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Logout Saga should call the LogOutError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Logout Saga should call the LogOutError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Logout Saga should dispatch the LogOutSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Logout Saga should dispatch the LogOutSuccess action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Reset Password Saga should call the PasswordResetRequestError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Reset Password Saga should call the PasswordResetRequestError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Reset Password Saga should dispatch the PasswordResetRequestSuccess action if the request was successfully received by a server 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Reset Password Saga should dispatch the PasswordResetRequestSuccess action if the request was successfully received by a server 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Reset Password Saga should display the success message 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Reset Password Saga should display the success message 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Set Password Saga should call the SetPasswordError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Set Password Saga should call the SetPasswordError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Set Password Saga should dispatch the SetPasswordSuccess action if the password was successfully changed by server 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Set Password Saga should dispatch the SetPasswordSuccess action if the password was successfully changed by server 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Set Password Saga should display the success message 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Set Password Saga should display the success message 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Sign Up Saga should call the SignUpError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Sign Up Saga should call the SignUpError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Sign Up Saga should dispatch the SignUpSuccess action if the sign up was successfull 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Sign Up Saga should dispatch the SignUpSuccess action if the sign up was successfull 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`User: Sign Up Saga should display the success message 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`User: Sign Up Saga should display the success message 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/endpoint",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;

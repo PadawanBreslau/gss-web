@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render and match the snapshot 1`] = `
+<ForwardRef(WithStyles)>
+  <Switch>
+    <withReducer(withReducer(Connect(UiHOC)))
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <withReducer(withReducer(Connect(UiHOC)))
+      component={[Function]}
+    />
+  </Switch>
+</ForwardRef(WithStyles)>
+`;

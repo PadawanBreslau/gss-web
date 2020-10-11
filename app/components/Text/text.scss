@@ -1,0 +1,21 @@
+.text {
+  &--sm {
+    font-size: .875rem;
+    line-height: 1.125rem;
+  }
+
+  &--md {
+    font-size: 1rem;
+    line-height: 1.35rem;
+  }
+
+  &--lg {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  &--xl {
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+  }
+}

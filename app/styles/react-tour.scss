@@ -1,0 +1,88 @@
+@import './colors.scss';
+
+.reactour__helper {
+  color: $black;
+  white-space: pre-line;
+  max-width: 300px;
+}
+
+[data-tour-elem="controls"] {
+  justify-content: center;
+}
+
+[data-tour-elem="badge"] {
+  display: none;
+}
+
+[data-tour-elem="navigation"] {
+  display: none;
+}
+
+[data-tour-elem="left-arrow"],
+[data-tour-elem="right-arrow"] {
+  position: relative;
+  min-width: 30px;
+  height: 30px;
+  margin-left: 70px;
+  outline: 0;
+
+  svg {
+    display: none;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: $yellow;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 4px;
+    top: 7px;
+  }
+  
+  &:after {
+    top: 20px;
+    transform: rotate(-45deg);
+  }
+
+  &:disabled {
+    opacity: .3;
+  }
+}
+
+[data-tour-elem="left-arrow"] {
+  margin-right: 70px;
+  margin-left: 0;
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
+    top: 20px;
+    transform: rotate(45deg);
+  }
+}
+
+.reactour__custom-close {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  z-index: 1;
+  font-size: .9rem;
+  color: $black;
+  outline: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

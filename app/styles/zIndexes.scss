@@ -1,0 +1,36 @@
+$z-layers: (
+  'messageBox': 200,
+  'contextMenu': 102,
+  'sidebar': (
+    'base': 100,
+    'joinIcon': 101
+  ),
+  'hostRequestTimer': 50,
+  'video': (
+    'overlay': 20
+  ),
+  'buttonSpan': 1,
+);
+
+/* helper functions */
+@function nested-keys($map, $keys...) {
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+    $map: map-get($map, $key);
+  }
+  @return true;
+}
+@function deep($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+@function z($layers...) {
+  @if not nested-keys($z-layers, $layers...) {
+    @warn "No z-index entry found";
+  }
+  @return deep($z-layers, $layers...);
+}

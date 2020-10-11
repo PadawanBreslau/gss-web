@@ -1,0 +1,8 @@
+$font-family: 'Quattrocento Sans', 'Helvetica Neue', 'Nunito Sans', Helvetica, Arial, sans-serif;
+
+$base-font-regular: 400;
+$base-font-bold: 700;
+
+:export {
+  fontFamily: $font-family;
+}

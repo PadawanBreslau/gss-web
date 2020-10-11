@@ -1,0 +1,61 @@
+@import '../../styles/colors.scss';
+@import '../../styles/zIndexes.scss';
+@import '../../styles/breakpoints.scss';
+
+.button {
+  color: $black;
+  border: 0;
+  padding: .5rem 2rem;
+  border-radius: 6px;
+  background: $yellow;
+  position: relative;
+  cursor: pointer;
+  word-wrap: normal;
+
+  @media (max-width: $small) {
+    padding: .5rem 1.5rem;
+  }
+
+  span {
+    height: 100%;
+
+    position: relative;
+    z-index: z('buttonSpan');
+  }
+
+  &:hover:not(:disabled) {
+    &:before {
+      background: $dark-yellow;
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  &:disabled {
+    opacity: .5;
+    cursor: default;
+  }
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: transparent;
+    position: absolute;
+    border-radius: 6px;
+    transition: all .4s ease-in-out;
+  }
+
+  &--secondary {
+    background: $white;
+    padding: .5rem 1rem;
+
+    &:hover:not(:disabled) {
+      &:before {
+        background: darken($white, 10%);
+      }
+    }
+  }
+}

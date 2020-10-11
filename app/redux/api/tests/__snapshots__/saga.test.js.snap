@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`API: fetchApiDataSaga should call the loadPageDataError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: fetchApiDataSaga should call the loadPageDataError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/test",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`API: fetchApiDataSaga should dispatch the loadPageDataSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: fetchApiDataSaga should dispatch the loadPageDataSuccess action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/test",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`API: fetchApiDataSaga should initialize form with the fetched data 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: fetchApiDataSaga should initialize form with the fetched data 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/test",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`API: fetchApiDataSaga should initialize form with the fetched data 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: fetchApiDataSaga should initialize form with the fetched data 4`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/test",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`API: fetchApiDataSaga should initialize form with the fetched data 5`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/HIDE_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: sendApiDataSaga should call the submitPageDataError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: sendApiDataSaga should call the submitPageDataError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/test",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`API: sendApiDataSaga should dispatch the submitPageDataSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: sendApiDataSaga should dispatch the submitPageDataSuccess action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/test",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`API: sendApiDataSaga should do the callback after success 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: sendApiDataSaga should do the callback after success 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/test",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;
+
+exports[`API: sendApiDataSaga should do the callback after success 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "action": Object {
+      "type": "app/Messages/SHOW_LOADING",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`API: sendApiDataSaga should do the callback after success 4`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [
+      "/test",
+      Object {},
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+  "type": "CALL",
+}
+`;

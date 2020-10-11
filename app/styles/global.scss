@@ -1,0 +1,107 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './flex.scss';
+@import './react-tour.scss';
+@import './animations.scss';
+
+html {
+  font-size: 100%;
+}
+
+html,
+body {
+  font-family: $font-family;
+  color: $white;
+}
+
+body {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#app {
+  background-color: rgba(#000, .7);
+  min-height: 100vh;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: $white;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: $base-font-bold;
+}
+
+hr {
+  border-color: white;
+}
+
+// text color
+.color-yellow {
+  color: $yellow;
+}
+
+.color-neon {
+  color: $neon;
+}
+
+@each $num in 0, 1, 2, 3, 4, 5 {
+  @each $type in 'margin',
+  'padding' {
+
+    @each $direction in 'left',
+    'right',
+    'top',
+    'bottom' {
+      .#{$type}-#{$direction}-#{$num} {
+        #{$type}-#{$direction}: #{$num}rem !important;
+      }
+    }
+
+    .#{$type}-side-#{$num} {
+      #{$type}-left: #{$num}rem !important;
+      #{$type}-right: #{$num}rem !important;
+    }
+
+    .#{$type}-#{$num} {
+      #{$type}-left: #{$num}rem !important;
+      #{$type}-right: #{$num}rem !important;
+      #{$type}-top: #{$num}rem !important;
+      #{$type}-bottom: #{$num}rem !important;
+    }
+  }
+}
