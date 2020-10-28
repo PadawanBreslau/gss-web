@@ -1,0 +1,49 @@
+.page{
+  background-color: #ffffdf;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.logo{
+  flex: 5;
+}
+
+.actions{
+  flex: 2;
+}
+
+.action-button{
+  text-transform: capitalize;
+}
+
+.actions-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  a {
+    font-weight: 600;
+
+    &:hover {
+      font-weight: 800;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.content{
+  text-align: justify;
+  margin-bottom: auto;
+}
+
