@@ -1,0 +1,77 @@
+@import '../../styles/colors.scss';
+
+.sections{
+  background-color: beige;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+.section{
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: $haze;
+  width: 100%;
+  padding: .825rem;
+  margin-bottom: 1.225rem;
+}
+
+.open-with{
+  flex: 1;
+
+  a{
+    color: $black;
+  }
+}
+
+.subsections{
+  margin-top: .825rem;
+}
+
+.subsection{
+  margin: .225rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.subsection-color-blue{
+  color: $blue;
+}
+
+.subsection-data{
+  margin-left: .5rem ;
+}
+
+.subsection-ascent{
+  margin-left: 1.5rem  ;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.expandable-title{
+  flex: 3;
+  font-size: larger;
+  font-weight: 600;
+  min-width: 25rem;
+}
+
+.subsection-title{
+  font-size: normal;
+  color: $smudge;
+  font-weight: 500;
+  line-height: 1.5rem;
+  background-color: $silver;
+  min-width: 25rem;
+}
+
+.subsection-descent{
+  margin-right: .5rem;
+}

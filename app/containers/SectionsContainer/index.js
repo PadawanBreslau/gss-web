@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import SectionsComponent from 'components/SectionsComponent';
 import { withApiRead } from 'hoc/withApi';
 
 @withApiRead({
@@ -11,9 +12,9 @@ import { withApiRead } from 'hoc/withApi';
 export default class SectionsContainer extends React.PureComponent {
   render() {
     const { data } = this.props;
-    if (!data.type) return null;
+    if (data === []) return null;
 
-    return <h1>We have a data</h1>;
+    return <SectionsComponent data={data} />;
   }
 }
 SectionsContainer.propTypes = {
