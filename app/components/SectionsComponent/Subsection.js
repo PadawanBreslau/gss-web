@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import Info from './Info';
+import Info from '../Info';
+import Utilities from './UtilitiesInfo';
 import './sections.scss';
 
 const Subsection = ({ subsection }) => (
@@ -15,6 +16,7 @@ const Subsection = ({ subsection }) => (
       descent={subsection.descent}
       trackColor={subsection.trackColor}
     />
+    <Utilities utilities={subsection.utilities} />
   </div>
 );
 

@@ -1,0 +1,11 @@
+@import '../../styles/colors.scss';
+
+.utility-box{
+  padding: 1rem;
+  background-color: $smoke;
+  border: 1px solid;
+  border-radius: 16px;
+  min-width: 12rem;
+  max-height: 10rem;
+  margin: .5rem;
+}

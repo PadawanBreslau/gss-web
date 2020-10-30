@@ -1,0 +1,59 @@
+@import '../../styles/colors.scss';
+
+.subsection{
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.subsection-title{
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.subsection-data{
+  display: flex;
+  flex-direction: row;
+}
+
+.subsection-description-with-photo{
+  margin-top: 2rem;
+  text-indent: 1.5em;
+  font-size: 1.225rem;
+  line-height: 1.75rem;
+}
+
+.subsection-mt{
+  flex: 1;
+}
+
+.subsection-utilities{
+  margin-top: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.float{
+  float: right;
+  margin-left: 1rem;
+}
+
+.text-block{
+  margin-bottom: .5rem;
+}
+
+.subsection-map-utilities-horizontal{
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.subsection-map-utilities-vertical{
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

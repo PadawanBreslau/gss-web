@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { ImportExport, DragHandle } from '@material-ui/icons';
-import './sections.scss';
+import './info.scss';
 
 const Info = ({ length, ascent, descent, trackColor }) => (
   <>
@@ -19,8 +18,8 @@ const Info = ({ length, ascent, descent, trackColor }) => (
 
 Info.propTypes = {
   length: PropTypes.number,
-  ascent: PropTypes.number,
-  descent: PropTypes.number,
+  ascent: PropTypes.string,
+  descent: PropTypes.string,
   trackColor: PropTypes.string,
 };
 

@@ -1,0 +1,34 @@
+@import '../../styles/colors.scss';
+
+.subsection-data{
+  margin-left: .5rem ;
+}
+
+.subsection-ascent{
+  margin-left: 1.5rem  ;
+}
+
+.subsection-descent{
+  margin-right: .5rem;
+}
+
+
+.subsection-color-blue{
+  color: $blue;
+}
+
+.subsection-color-red{
+  color: $red;
+}
+
+.subsection-color-green{
+  color: $green;
+}
+
+.subsection-color-yellow{
+  color: $yellow;
+}
+
+.subsection-color-black{
+  color: $black;
+}

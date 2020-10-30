@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Subsection from './Subsection'
 import { ChevronRight, OpenWith } from '@material-ui/icons';
-import Info from './Info';
+import Info from '../Info';
 import './sections.scss';
 
 const Section = ({ section }) => {
   const [subsectionVisible, setSubsectionVisible] = useState(false);
+
+  console.log("ssdfad", section.subsections);
 
   return (
     <div className='section'>

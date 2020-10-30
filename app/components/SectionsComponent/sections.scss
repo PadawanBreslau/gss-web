@@ -38,18 +38,6 @@
   flex-direction: row;
 }
 
-.subsection-color-blue{
-  color: $blue;
-}
-
-.subsection-data{
-  margin-left: .5rem ;
-}
-
-.subsection-ascent{
-  margin-left: 1.5rem  ;
-}
-
 .title{
   display: flex;
   flex-direction: row;
@@ -72,6 +60,7 @@
   min-width: 25rem;
 }
 
-.subsection-descent{
-  margin-right: .5rem;
+.utility{
+  margin-left: auto;
+  margin-right: auto;
 }

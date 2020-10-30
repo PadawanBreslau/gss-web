@@ -16,7 +16,7 @@ export function prepareEndpoint(pattern, props) {
   const propsWithParams = {
     ...props,
     ...params,
-  };
+  }.params;
 
   return pattern.replace(/:[^\s/]+/g, (arg) => propsWithParams[arg.replace(':', '')]);
 }
