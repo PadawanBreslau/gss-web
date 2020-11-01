@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link }  from 'react-router-dom';
 import config from 'config';
 import Utility from '../Utility';
 import Info from '../Info';
@@ -30,7 +31,10 @@ const SubsectionComponent = ({ data }) => (
           {data.utilities && data.utilities.map((utility) => (<Utility utility={utility} />))}
         </div>
       </div>
-      <div className='subsection-navigation'></div>
+      <div className='subsection-navigation'>
+        {data.previousSubsection && <Link to={`/subsections/${data.previousSubsection}`}><span>Poprzedni odcinek</span></Link>}
+        {data.nextSubsection && <Link to={`/subsections/${data.nextSubsection}`}><span>Następny odcinek</span></Link>}
+      </div>
     </div>
   </>
 );

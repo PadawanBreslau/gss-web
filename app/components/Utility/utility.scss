@@ -2,10 +2,34 @@
 
 .utility-box{
   padding: 1rem;
-  background-color: $smoke;
+  background-color: $haze;
   border: 1px solid;
   border-radius: 16px;
-  min-width: 12rem;
+  min-width: 15rem;
   max-height: 10rem;
   margin: .5rem;
+}
+
+.utility-title{
+  font-size: larger;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.icon{
+  margin-left: .425rem;
+}
+
+.utility-address-and-photo{
+  display: flex;
+  flex-direction: row ;
+}
+
+.utility-phone-and-url{
+  font-size: 0.925rem;
+}
+
+.utility-info{
+  margin-left: .625rem;
 }
