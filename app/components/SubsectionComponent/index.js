@@ -9,16 +9,16 @@ import './subsection.scss';
 
 const SubsectionComponent = ({ data }) => (
   <>
-    <div className='subsection'>
-      <div className='subsection-title'>{data.start} - {data.finish}</div>
-      <div className='subsection-data'>
+    <div className='subsection-view'>
+      <div className='subsection-view-title'>{data.start} - {data.finish}</div>
+      { false && <div className='subsection-data'>
         <Info
           length={data.length}
           ascent={data.ascent}
           descent={data.descent}
           trackColor={data.trackColor}
         />
-      </div>
+      </div> }
       <div className='subsection-description-with-photo'>
         {data.images && data.images !== [] && <div className='float'> <img src={config.api.url + data.images[0]?.pictureMedium} /> </div>}
         {descriptionToArray(data.description)?.map((block) => (<div className="text-block">{block}</div>))}

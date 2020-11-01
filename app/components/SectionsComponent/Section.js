@@ -9,8 +9,6 @@ import './sections.scss';
 const Section = ({ section }) => {
   const [subsectionVisible, setSubsectionVisible] = useState(false);
 
-  console.log("ssdfad", section.subsections);
-
   return (
     <div className='section'>
       <div className='title'>
@@ -23,9 +21,9 @@ const Section = ({ section }) => {
           ascent={section.ascent}
           descent={section.descent}
         />
-        <span className='open-with'>
+        { false && <span className='open-with'>
           <Link to={`/sections/${section.id}`}><OpenWith fontSize="small" /></Link>
-        </span>
+        </span> }
       </div>
       { subsectionVisible && <div className='subsections'>
         {section.subsections.map((subsection) => (<Subsection subsection={subsection} />))}

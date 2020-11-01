@@ -1,12 +1,12 @@
 @import '../../styles/colors.scss';
 
-.subsection{
+.subsection-view{
   display: flex;
   flex-direction: column;
-  padding: 5rem;
+  padding: 2.5rem;
 }
 
-.subsection-title{
+.subsection-view-title{
   font-weight: 600;
   font-size: xx-large;
 }
@@ -33,6 +33,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: flex-start;
   flex-wrap: wrap;
 }
 

@@ -1,5 +1,8 @@
+@import '../../styles/colors.scss';
+
 .page{
-  background-color: #ffffdf;
+  background-color: #6d8da1;
+  background-image: linear-gradient(to bottom right, #96e3fa, #3d5da1);
   width: 100%;
   text-align: center;
   display: flex;
@@ -12,10 +15,12 @@
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  min-height: 5rem;
 }
 
 .logo{
-  flex: 5;
+  flex: 3;
+  color: $haze;
 }
 
 .actions{
@@ -33,6 +38,7 @@
 
   a {
     font-weight: 600;
+    font-size: x-large;
 
     &:hover {
       font-weight: 800;
@@ -45,5 +51,6 @@
 .content{
   text-align: justify;
   margin-bottom: auto;
+  min-height: 100vh;
 }
 

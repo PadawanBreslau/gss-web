@@ -18,11 +18,12 @@ const Utility = ({ utility }) => (
       {utility.address}
     </div>
     <div className='utility-address-and-photo'>
-      {console.log("UUUU",utility)}
       {utility.imageThumbnail && <div className='utility-photo'><img src={config.api.url + utility.imageThumbnail} alt="Zdjecie"/></div> }
       <div className='utility-phone-and-url'>
-        {utility.phoneNumber && <><p className='utility-info'><Phone /><span className='utility-info'>{utility.phoneNumber}</span></p></>}
-        {utility.website && <><p className='utility-info'><Public /><span className='utility-info'><a href={utility.website}>Website</a></span></p></>}
+        {utility.phoneNumber && <><p className='utility-info'><Phone /><span className='utility-info'>
+          <a href={`tel:${utility.phoneNumber}`}>{utility.phoneNumber}</a></span></p></>}
+        {utility.website && <><p className='utility-info'><Public /><span className='utility-info'>
+          <a href={utility.website} target="_blank">Strona WWW</a></span></p></>}
       </div>
     </div>
   </div>
