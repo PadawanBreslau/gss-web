@@ -1,9 +1,9 @@
 export const accommodation = (utility) => (
-  utility.utilityType === 'food_and_acommodation' ||
-  utility.utilityType === 'accomodation'
+  utility.utilityType === 'food_and_accommodation' ||
+  utility.utilityType === 'accommodation'
 )
 export const food = (utility) => (
-  utility.utilityType === 'food_and_acommodation' ||
+  utility.utilityType === 'food_and_accommodation' ||
   utility.utilityType === 'restaurant' ||
   utility.utilityType === 'petrol_station'
 )
