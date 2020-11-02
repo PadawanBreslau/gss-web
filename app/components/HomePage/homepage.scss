@@ -1,0 +1,37 @@
+.content{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.home-title{
+  font-size: 5.25rem;
+  margin-bottom: 1.225rem;
+  font-weight: 600;
+}
+
+.home-lead{
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.home-list{
+  font-size: 1.225rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.home-list-element{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home-mt{
+  margin-bottom: 1.5rem;
+}
+
+.element{
+  margin-left: .425rem;
+}
