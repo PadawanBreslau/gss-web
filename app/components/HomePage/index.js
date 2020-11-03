@@ -5,7 +5,7 @@ import { Eco } from '@material-ui/icons';
 import './homepage.scss';
 
 const HomePage = () => (
-  <div className='content'>
+  <div className='home-content'>
     <p className='home-title'>
       <FormattedMessage {...messages.header} />
     </p>
