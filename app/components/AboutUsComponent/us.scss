@@ -1,0 +1,41 @@
+.us-content{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.us-header{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.us-description-with-photo{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.us-photo{
+  flex: 1;
+}
+
+.us-description{
+  flex: 2;
+  margin-left: 1rem;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.us-irr{
+  margin-left: 2rem;
+  font-weight: 600;
+  font-size: 3rem;
+}

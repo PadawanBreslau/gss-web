@@ -1,0 +1,29 @@
+.rules-content{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.rules-header{
+  font-size: x-large;
+  margin-bottom: 3rem;
+}
+
+.rules-subheader{
+  font-size: x-large;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.rules-list{
+  font-size: 1.225rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.rules-list-element{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
