@@ -4,8 +4,6 @@ import { Hotel, Fastfood, Store, Commute } from '@material-ui/icons';
 import './sections.scss';
 
 const Utilities = ({ utilities }) => {
-  console.log("aaa", utilities);
-
   const accommodation = utilities && utilities.some(
     (ut)=>(ut.utilityType === 'accommodation' || ut.utilityType === 'food_and_accommodation'))
   const food = utilities && utilities.some(

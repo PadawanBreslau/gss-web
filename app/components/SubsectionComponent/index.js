@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link }  from 'react-router-dom';
-import config from 'config';
 import Utility from '../Utility';
 import Info from '../Info';
 import MapaTurystyczna from '../MapaTurystyczna';
+import Image from '../Image';
 import './subsection.scss';
 
 const SubsectionComponent = ({ data }) => (
@@ -20,7 +20,8 @@ const SubsectionComponent = ({ data }) => (
         />
       </div> }
       <div className='subsection-description-with-photo'>
-        {data.images && data.images !== [] && <div className='float'> <img src={config.api.url + data.images[0]?.pictureMedium} /> </div>}
+        { console.log('images', data.images)}
+        {data.images && data.images !== [] && <div className='float'> <Image image={data.images[0]}/> </div>}
         {descriptionToArray(data.description)?.map((block) => (<div className="text-block">{block}</div>))}
       </div>
       <div className={data.horizontalMap ? 'subsection-map-utilities-horizontal' : 'subsection-map-utilities-vertical'}>

@@ -1,0 +1,20 @@
+.image{
+  margin: .225rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.picture{
+  padding: .225rem;
+}
+
+.description{
+  font-size: smaller;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.author{
+  font-weight: 500;
+  padding-left: .5rem;
+}
