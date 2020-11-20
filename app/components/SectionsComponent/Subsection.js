@@ -6,9 +6,11 @@ import Utilities from './UtilitiesInfo';
 import './sections.scss';
 
 const Subsection = ({ subsection }) => (
-  <div className='subsection'>
+  <div className="subsection">
     <Link to={`/subsections/${subsection.id}`}>
-      <div className='subsection-title'>{subsection.start} - {subsection.finish}</div>
+      <div className="subsection-title">
+        {subsection.start} - {subsection.finish}
+      </div>
     </Link>
     <Info
       length={subsection.length}

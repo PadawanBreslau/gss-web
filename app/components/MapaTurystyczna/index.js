@@ -5,7 +5,7 @@ import './mt.scss';
 
 const MapaTurystyczna = ({ mtUuid, horizontalMap }) => (
   <>
-    <div className={horizontalMap ? "horizontal-map" : "vertical-map"}>
+    <div className={horizontalMap ? 'horizontal-map' : 'vertical-map'}>
       <IFrame mtUuid={mtUuid} horizontalMap={horizontalMap} />
     </div>
   </>

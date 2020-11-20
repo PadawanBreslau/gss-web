@@ -94,11 +94,7 @@ const RegisterForm = ({ onSubmit, formErrors, touchField }) => {
           </Text>
           <Text size="sm">
             <FormattedMessage id="registerForm.termsAndConditionsBeforeLink" />
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="" target="_blank" rel="noopener noreferrer">
               <FormattedMessage id="registerForm.termsAndConditionsLink" />
             </a>
           </Text>

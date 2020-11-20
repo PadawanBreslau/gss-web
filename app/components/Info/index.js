@@ -5,14 +5,19 @@ import './info.scss';
 
 const Info = ({ length, ascent, descent, trackColor }) => (
   <>
-    { length && <div className='subsection-data'>{length} km</div> }
-    { ascent && descent &&
-      <div className='subsection-heights'>
-        <div className='subsection-ascent'>{ascent}</div><ImportExport fontSize="small" />
-        <div className='subsection-descent'>{descent}</div>
+    {length && <div className="subsection-data">{length} km</div>}
+    {ascent && descent && (
+      <div className="subsection-heights">
+        <div className="subsection-ascent">{ascent}</div>
+        <ImportExport fontSize="small" />
+        <div className="subsection-descent">{descent}</div>
       </div>
-    }
-    {trackColor && <div className={`subsection-color-${trackColor}`}><DragHandle fontSize="small" /></div>}
+    )}
+    {trackColor && (
+      <div className={`subsection-color-${trackColor}`}>
+        <DragHandle fontSize="small" />
+      </div>
+    )}
   </>
 );
 

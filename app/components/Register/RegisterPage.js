@@ -4,11 +4,7 @@ import RegisterForm from './RegisterForm';
 
 const RegisterPage = ({ onSignUp, form, touch }) => (
   <div className="register-form">
-    <RegisterForm
-      onSubmit={onSignUp}
-      formName={form}
-      touchField={touch}
-    />
+    <RegisterForm onSubmit={onSignUp} formName={form} touchField={touch} />
   </div>
 );
 

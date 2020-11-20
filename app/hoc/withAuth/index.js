@@ -8,7 +8,6 @@ import makeSelectUser from 'redux/user/selectors';
 import userReducer from 'redux/user/reducer';
 import userSaga from 'redux/user/saga';
 import { LogIn, SignUp, PasswordReset, SetPassword } from 'redux/user/actions';
-import { showUiError } from 'redux/UI/actions';
 
 export default function withAuth() {
   return (PageComponent) => {

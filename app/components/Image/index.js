@@ -4,33 +4,30 @@ import { Tooltip } from 'react-tippy';
 import config from 'config';
 import './image.scss';
 
-const authorAndLicence = (image) => (
-  image.author + ' ' + image.licence
-);
+const authorAndLicence = (image) => `${image.author} ${image.licence}`;
 
 const Image = ({ image }) => (
   <div className="image">
-    <div className='picture'>
+    <div className="picture">
       <img src={config.api.url + image?.pictureLarge} />
     </div>
-    <div className='description'>
+    <div className="description">
       <span>{image.description}</span>
 
-      {image.author &&
-        <Tooltip
-          title={authorAndLicence(image)}
-          position="bottom"
-          delay={250}
-        >
-          { image.url ? (<a href={image.url} className='author'>{image.author}</a>) : <span className='author'>{image.author}</span> }
+      {image.author && (
+        <Tooltip title={authorAndLicence(image)} position="bottom" delay={250}>
+          {image.url ? (
+            <a href={image.url} className="author">
+              {image.author}
+            </a>
+          ) : (
+            <span className="author">{image.author}</span>
+          )}
         </Tooltip>
-      }
+      )}
     </div>
   </div>
 );
-
-
-
 
 Image.propTypes = {
   image: PropTypes.object,

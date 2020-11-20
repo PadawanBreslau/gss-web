@@ -10,9 +10,7 @@ import './loginForm.scss';
 
 const LogInPage = ({ onLogin }) => (
   <div className="login-form">
-    <LogInForm
-      onSubmit={onLogin}
-    />
+    <LogInForm onSubmit={onLogin} />
     <Box my={2}>
       <Text size="sm">
         <Link to="reset_password">

@@ -14,6 +14,7 @@ export default defineMessages({
   },
   lead: {
     id: `${scope}.lead`,
-    defaultMessage: '500km trasy, 20km przewyższenia, mnóstwo gór, historii i bez nadmiernych asfaltów',
+    defaultMessage:
+      '500km trasy, 20km przewyższenia, mnóstwo gór, historii i bez nadmiernych asfaltów',
   },
 });
