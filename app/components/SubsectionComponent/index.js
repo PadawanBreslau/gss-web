@@ -24,8 +24,7 @@ const SubsectionComponent = ({ data }) => (
         </div>
       )}
       <div className="subsection-description-with-photo">
-        {console.log('images', data.images)}
-        {data.images && data.images !== [] && (
+        {data.images && data.images.length > 0 && data.images[0] !== undefined && (
           <div className="float">
             {' '}
             <Image image={data.images[0]} />{' '}
