@@ -12,14 +12,14 @@ const Subsection = ({ subsection }) => (
         {subsection.start} - {subsection.finish}
       </div>
     </Link>
-    <div className='allinfo'>
-    <Info
-      length={subsection.length}
-      ascent={subsection.ascent}
-      descent={subsection.descent}
-      trackColor={subsection.trackColor}
-    />
-    <Utilities utilities={subsection.utilities} />
+    <div className="allinfo">
+      <Info
+        length={subsection.length}
+        ascent={subsection.ascent}
+        descent={subsection.descent}
+        trackColor={subsection.trackColor}
+      />
+      <Utilities utilities={subsection.utilities} />
     </div>
   </div>
 );

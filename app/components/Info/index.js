@@ -13,7 +13,7 @@ const Info = ({ length, ascent, descent, trackColor }) => (
         <div className="subsection-descent">{descent}</div>
       </div>
     )}
-    {trackColor && (
+    {trackColor && false && (
       <div className={`subsection-color-${trackColor}`}>
         <DragHandle fontSize="small" />
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { ChevronRight, OpenWith } from '@material-ui/icons';
+import { ChevronRight, ChevronLeft, OpenWith } from '@material-ui/icons';
 import Subsection from './Subsection';
 import Info from '../Info';
 import './sections.scss';
@@ -12,13 +12,19 @@ const Section = ({ section }) => {
   return (
     <div className="section">
       <div className="title">
-        <span className="expandable-title" onClick={() => setSubsectionVisible(!subsectionVisible)}>
-          <ChevronRight fontSize="small" />
-          <span className='section-title'>
-            {section.start} - {section.finish}
-          </span>
-        </span>
-        <div className='allinfo'>
+        <div className="expandable-title" onClick={() => setSubsectionVisible(!subsectionVisible)}>
+
+          <div className="section-title">
+            <div className='section-chevron'>
+              { !subsectionVisible ?  <ChevronRight fontSize="large" /> : <ChevronLeft fontSize="large" /> }
+            </div>
+            <div className='section-start-end'>
+              <div className="section-location">{section.start}</div>
+              <div className="section-location">{section.finish}</div>
+            </div>
+          </div>
+        </div>
+        <div className="allinfo">
           <Info length={section.length} ascent={section.ascent} descent={section.descent} />
         </div>
         {false && (

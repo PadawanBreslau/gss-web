@@ -32,10 +32,15 @@
 }
 
 .section-title{
+  display: flex;
   font-size: 1.225rem;
   @media (max-width: 500px) {
     font-size: .925rem;
   }
+}
+
+.section-chevron{
+  vertical-align: middle;
 }
 
 
