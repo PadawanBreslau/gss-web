@@ -14,11 +14,13 @@ const Section = ({ section }) => {
       <div className="title">
         <span className="expandable-title" onClick={() => setSubsectionVisible(!subsectionVisible)}>
           <ChevronRight fontSize="small" />
-          <span>
+          <span className='section-title'>
             {section.start} - {section.finish}
           </span>
         </span>
-        <Info length={section.length} ascent={section.ascent} descent={section.descent} />
+        <div className='allinfo'>
+          <Info length={section.length} ascent={section.ascent} descent={section.descent} />
+        </div>
         {false && (
           <span className="open-with">
             <Link to={`/sections/${section.id}`}>

@@ -2,18 +2,29 @@
 
 .subsection-data{
   margin-left: .5rem ;
+
+  @media (max-width: 500px) {
+    margin-left: .225rem;
+    font-size: .75rem;
+  }
 }
 
 .subsection-ascent{
-  margin-left: 1.5rem  ;
+  margin-left: 1.5rem;
+  @media (max-width: 500px) {
+    margin-left: .225rem;
+  }
 }
 
 .subsection-heights{
   min-width: 4rem ;
   display: flex;
   flex-direction: row;
+  @media (max-width: 500px) {
+    margin-left: .225rem;
+    font-size: .75rem;
+  }
 }
-
 
 .subsection-descent{
   margin-right: .5rem;

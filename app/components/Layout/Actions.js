@@ -16,6 +16,9 @@ const Actions = () => (
     <Link to="/us">
       <div className="action-button">O NAS</div>
     </Link>
+    <Link to="/charity">
+      <div className="action-button">WSPIERAMY!</div>
+    </Link>
   </div>
 );
 

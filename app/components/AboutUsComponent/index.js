@@ -8,7 +8,7 @@ const AboutUsComponent = () => (
     <div className="us-header">Kim jesteśmy?</div>
     <div className="us-description-with-photo">
       <div className="us-photo">
-        <img src={IrrImage} />
+        <img src={IrrImage} style={{width: '100%'}} />
       </div>
       <div className="us-description">
         <span className="us-irr">Irracjonalnie Maszerujący</span>
@@ -27,7 +27,7 @@ const AboutUsComponent = () => (
     </div>
     <div className="us-description-with-photo">
       <div className="us-photo">
-        <img src={MoiImage} />
+        <img src={MoiImage} style={{width: '90%'}} />
       </div>
       <div className="us-description">
         <span className="us-irr">Staszek Zawadzki</span>

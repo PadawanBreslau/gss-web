@@ -2,7 +2,7 @@
 
 .page{
   background-color: #6d8da1;
-  background-image: linear-gradient(to bottom right, #96e3fa, #3d5da1);
+  background-image: linear-gradient(to bottom right, #96e3fa, #4b71c3);
   width: 100%;
   text-align: center;
   display: flex;
@@ -14,14 +14,22 @@
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  margin: auto;
+  margin-top: 1rem;
   min-height: 5rem;
+  width: 60%;
+  text-align: center;
+
+  @media (max-width: 500px) {
+    width: 90%;
+    min-height: 2rem;
+  }
 }
 
 .logo{
   font-size: x-large;
   font-weight: 600;
-  flex: 3;
+  display: none;
   color: $graphite;
 }
 
@@ -45,6 +53,13 @@
     &:hover {
       font-weight: 800;
       text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 500px) {
+    a{
+      font-weight: 600;
+      font-size: small;
     }
   }
 }

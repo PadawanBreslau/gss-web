@@ -1,5 +1,4 @@
 .rules-content{
-  text-align: center;
   margin: auto;
   width: 90%;
 }
@@ -7,6 +6,13 @@
 .rules-header{
   font-size: x-large;
   margin-bottom: 3rem;
+  text-indent: 2rem;
+
+  @media (max-width: 500px) {
+    font-size: large;
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+  }
 }
 
 .rules-subheader{
@@ -21,9 +27,15 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+
+  @media (max-width: 500px) {
+    font-size: .925rem;
+    margin-bottom: .725rem;
+  }
 }
 
 .rules-list-element{
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-bottom: 1rem;
+
 }
