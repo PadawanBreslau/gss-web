@@ -9,15 +9,34 @@
 .picture{
   padding: .225rem;
   width: 100%;
+
+  @media (max-width: 500px) {
+    padding: 0;
+  }
 }
 
 .description{
+  display: flex;
+  flex-direction: row;
   font-size: smaller;
   font-weight: 600;
   padding-left: 1rem;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    font-size: small;
+    font-weight: 600;
+    padding-left: .225rem;
+  }
 }
 
 .author{
   font-weight: 500;
   padding-left: .5rem;
+}
+
+.imageDisplay{
+  @media (max-width: 500px) {
+    width: 90%;
+  }
 }

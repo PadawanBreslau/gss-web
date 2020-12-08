@@ -9,10 +9,10 @@ const authorAndLicence = (image) => `${image.author} ${image.licence}`;
 const Image = ({ image }) => (
   <div className="image">
     <div className="picture">
-      <img src={config.api.url + image?.pictureMedium} />
+      <img src={config.api.url + image?.pictureMedium} className="imageDisplay" />
     </div>
     <div className="description">
-      <span>{image.description}</span>
+      <span className="imageDescripion">{image.description}</span>
 
       {image.author && (
         <Tooltip title={authorAndLicence(image)} position="bottom" delay={250}>
