@@ -13,6 +13,7 @@ const MapaTurystyczna = ({ mtUuid, horizontalMap }) => (
 
 MapaTurystyczna.propTypes = {
   mtUuid: PropTypes.string,
+  horizontalMap: PropTypes.bool,
 };
 
 export default MapaTurystyczna;

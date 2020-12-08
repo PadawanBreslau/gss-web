@@ -14,7 +14,6 @@ export default class SubsectionContainer extends React.PureComponent {
     const { data } = this.props;
     if (data === []) return null;
 
-    console.log(data);
     return <SubsectionComponent data={data} />;
   }
 }

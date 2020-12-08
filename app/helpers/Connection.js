@@ -92,7 +92,6 @@ class Connection {
       this[method] = (endpoint, payload = {}, optionsOverwrite = {}) => {
         const requestUrl = `${this.apiBase}${endpoint}`;
         const requestOptions = prepareRequestOptions(method, payload, optionsOverwrite);
-        console.log('RO', requestOptions);
         return fetch(requestUrl, requestOptions)
           .then((response) => parseAPIResponse(response))
           .then(

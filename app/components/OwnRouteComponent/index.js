@@ -20,7 +20,7 @@ const OwnRouteComponent = () => (
 
     <div className="rules-example">
       <div className="rules-example-image">
-        <img src={Image} width="100%" />
+        <img src={Image} width="100%" alt="Przebieg alternatywny" />
       </div>
       <div className="rules-example-explanation">
         Trasa GSS 2.0 przebiega zielonym szlakiem między <strong>Przełęczą Lądecką</strong> a{' '}

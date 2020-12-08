@@ -6,7 +6,7 @@ import './sections.scss';
 const SectionsComponent = ({ data }) => (
   <div className="sections">
     {data.map((section) => (
-      <Section section={section} />
+      <Section section={section}  key={data.id} />
     ))}
   </div>
 );

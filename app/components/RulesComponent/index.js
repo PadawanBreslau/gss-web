@@ -1,15 +1,13 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 import { Eco, EmojiEvents, ThumbUp, Forward } from '@material-ui/icons';
-import messages from './messages';
 import './rules.scss';
 
 const RulesComponent = () => (
   <div className="rules-content">
     <div className="rules-header">
       Najważniejsze dla nas jest to, byście spędzili świetny czas w górach. Ale skoro jest trasa, to
-      na pewno będą chętni by 'odznaczyć' swoją obecność czy ustanowić rekord trasy. Dlatego
+      na pewno będą chętni by &#39;odznaczyć&#39; swoją obecność czy ustanowić rekord trasy. Dlatego
       ustaliliśmy kilka arbitralnych zasad nt. przejścia szlaku by mógł być przez nas uznany za
       ukończony lub wliczony do naszych rekordów
     </div>

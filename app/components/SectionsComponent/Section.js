@@ -13,12 +13,15 @@ const Section = ({ section }) => {
     <div className="section">
       <div className="title">
         <div className="expandable-title" onClick={() => setSubsectionVisible(!subsectionVisible)}>
-
           <div className="section-title">
-            <div className='section-chevron'>
-              { !subsectionVisible ?  <ChevronRight fontSize="large" /> : <ChevronLeft fontSize="large" /> }
+            <div className="section-chevron">
+              {!subsectionVisible ? (
+                <ChevronRight fontSize="large" />
+              ) : (
+                <ChevronLeft fontSize="large" />
+              )}
             </div>
-            <div className='section-start-end'>
+            <div className="section-start-end">
               <div className="section-location">{section.start}</div>
               <div className="section-location">{section.finish}</div>
             </div>
@@ -38,7 +41,7 @@ const Section = ({ section }) => {
       {subsectionVisible && (
         <div className="subsections">
           {section.subsections.map((subsection) => (
-            <Subsection subsection={subsection} />
+            <Subsection subsection={subsection} key={subsection.id}/>
           ))}
         </div>
       )}

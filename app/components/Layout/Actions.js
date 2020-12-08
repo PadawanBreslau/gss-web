@@ -17,16 +17,15 @@ const Actions = () => (
     <Link to="/us">
       <div className="action-button">O NAS</div>
     </Link>
-    <a href='https://www.facebook.com/gssreloaded' target='_blank'>
-      <img src={FbImage} width="20px"/>
+    <a href="https://www.facebook.com/gssreloaded" target="_blank">
+      <img src={FbImage} width="20px" alt="FB logo" />
     </a>
 
-
-    { false &&
-    <Link to="/charity">
-      <div className="action-button">WSPIERAMY!</div>
-    </Link>
-    }
+    {false && (
+      <Link to="/charity">
+        <div className="action-button">WSPIERAMY!</div>
+      </Link>
+    )}
   </div>
 );
 

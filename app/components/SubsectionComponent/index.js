@@ -31,7 +31,7 @@ const SubsectionComponent = ({ data }) => (
           </div>
         )}
         {descriptionToArray(data.description)?.map((block) => (
-          <div className="text-block">{block}</div>
+          <div className="text-block" key={block}>{block}</div>
         ))}
       </div>
       <div
@@ -47,7 +47,7 @@ const SubsectionComponent = ({ data }) => (
           )}
         </div>
         <div className="subsection-utilities">
-          {data.utilities && data.utilities.map((utility) => <Utility utility={utility} />)}
+          {data.utilities && data.utilities.map((utility) => <Utility utility={utility} key={utility.id} />)}
         </div>
       </div>
       <div className="subsection-navigation">
@@ -69,7 +69,7 @@ const SubsectionComponent = ({ data }) => (
 const descriptionToArray = (description) => description?.split('\n');
 
 SubsectionComponent.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.any,
 };
 
 export default SubsectionComponent;

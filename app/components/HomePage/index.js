@@ -38,6 +38,7 @@ const HomePage = () => (
     </div>
     <div className="home-mt">
       <iframe
+        title="Mapa turystyczna"
         src="https://mapa-turystyczna.pl/map/widget/route/h1l0p0/qf1u.html"
         height="680"
         frameBorder="0"

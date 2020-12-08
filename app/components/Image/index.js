@@ -9,7 +9,11 @@ const authorAndLicence = (image) => `${image.author} ${image.licence}`;
 const Image = ({ image }) => (
   <div className="image">
     <div className="picture">
-      <img src={config.api.url + image?.pictureMedium} className="imageDisplay" />
+      <img
+        src={config.api.url + image?.pictureMedium}
+        className="imageDisplay"
+        alt="Obrazek z odcinka"
+      />
     </div>
     <div className="description">
       <span className="imageDescripion">{image.description}</span>
