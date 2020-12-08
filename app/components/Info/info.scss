@@ -1,7 +1,8 @@
 @import '../../styles/colors.scss';
 
 .subsection-data{
-  margin-left: .5rem ;
+  margin-left: .5rem;
+  align-items: center;
 
   @media (max-width: 500px) {
     margin-left: .225rem;
@@ -20,6 +21,8 @@
   min-width: 4rem ;
   display: flex;
   flex-direction: row;
+  align-items: center;
+
   @media (max-width: 500px) {
     margin-left: .225rem;
     font-size: .75rem;
