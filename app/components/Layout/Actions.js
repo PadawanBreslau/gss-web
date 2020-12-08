@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FbImage from 'images/fb.png';
 import './layout.scss';
 
 const Actions = () => (
@@ -16,6 +17,11 @@ const Actions = () => (
     <Link to="/us">
       <div className="action-button">O NAS</div>
     </Link>
+    <a href='https://www.facebook.com/gssreloaded' target='_blank'>
+      <img src={FbImage} width="20px"/>
+    </a>
+
+
     { false &&
     <Link to="/charity">
       <div className="action-button">WSPIERAMY!</div>
