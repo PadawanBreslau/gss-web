@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Utility from '../Utility';
+import Trivium from '../Trivium';
 import Info from '../Info';
 import MapaTurystyczna from '../MapaTurystyczna';
 import Image from '../Image';
@@ -46,8 +47,14 @@ const SubsectionComponent = ({ data }) => (
             <MapaTurystyczna mtUuid={data.mtUuid} horizontalMap={data.horizontalMap} />
           )}
         </div>
-        <div className="subsection-utilities">
-          {data.utilities && data.utilities.map((utility) => <Utility utility={utility} key={utility.id} />)}
+        <div className="trivia-and-utilities">
+          <div className="subsection-utilities">
+            {data.utilities && data.utilities.map((utility) => <Utility utility={utility} key={utility.id} />)}
+          </div>
+          <div className="subsection-trivia">
+            <span className='triviaLabel'>Ciekawostki</span>
+            {data.trivia && data.trivia.map((trivium) => <Trivium trivium={trivium} key={trivium.id} />)}
+          </div>
         </div>
       </div>
       <div className="subsection-navigation">

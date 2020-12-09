@@ -42,17 +42,50 @@
 
 .subsection-mt{
   flex-direction: row;
-  flex: 3;
+  flex: 6;
 }
 
+.trivia-and-utilities{
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+ }
+
 .subsection-utilities{
-  margin-top: 1rem;
   flex: 2;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   align-content: flex-start;
   flex-wrap: wrap;
+  @media (max-width: 500px) {
+    margin-top: 1.5rem;
+  }
+}
+
+.subsection-trivia{
+  justify-self: start;
+  margin-top: .825rem;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 90%;
+  @media (max-width: 500px) {
+    margin-top: 1.5rem;
+  }
+}
+
+.triviaLabel{
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
 }
 
 .float{
