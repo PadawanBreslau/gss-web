@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import IFrame from '../IFrame';
 import './mt.scss';
 
-const MapaTurystyczna = ({ mtUuid, horizontalMap }) => (
+const MapaTurystyczna = ({ mtUuid, horizontalMap, basic }) => (
   <>
     <div className={horizontalMap ? 'horizontal-map' : 'vertical-map'}>
-      <IFrame mtUuid={mtUuid} horizontalMap={horizontalMap} />
+      <IFrame mtUuid={mtUuid} horizontalMap={horizontalMap} basic={basic} />
     </div>
   </>
 );
@@ -14,6 +14,7 @@ const MapaTurystyczna = ({ mtUuid, horizontalMap }) => (
 MapaTurystyczna.propTypes = {
   mtUuid: PropTypes.string,
   horizontalMap: PropTypes.bool,
+  basic: PropTypes.bool,
 };
 
 export default MapaTurystyczna;
