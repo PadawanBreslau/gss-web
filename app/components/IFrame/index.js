@@ -2,12 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './info.scss';
 
-const mapHeaders = (basic) => (
-  basic ? 'h0l0p0' : 'h1l0p1'
-);
+const mapHeaders = (basic) => (basic ? 'h0l0p0' : 'h1l0p1');
 
 const height = (horizontalMap, basic) => {
-  if(basic){
+  if (basic) {
     return 300;
   }
 
@@ -17,7 +15,7 @@ const height = (horizontalMap, basic) => {
 const IFrame = ({ horizontalMap, mtUuid, basic }) => (
   <>
     <iframe
-      title='Mapa turystyczna'
+      title="Mapa turystyczna"
       src={`https://mapa-turystyczna.pl/map/widget/route/${mapHeaders(basic)}/${mtUuid}.html`}
       height={height(horizontalMap, basic)}
       width="100%"

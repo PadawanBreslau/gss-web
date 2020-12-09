@@ -3,6 +3,7 @@
 .subsection-data{
   margin-left: .5rem;
   align-items: center;
+  width: 3.75rem;
 
   @media (max-width: 500px) {
     margin-left: .225rem;
@@ -11,7 +12,8 @@
 }
 
 .subsection-ascent{
-  margin-left: 1.5rem;
+  margin-left: 1.225rem;
+  width: 1.875rem;
   @media (max-width: 500px) {
     margin-left: .225rem;
   }
@@ -30,6 +32,7 @@
 }
 
 .subsection-descent{
+  width: 1.875rem;
   margin-right: .5rem;
 }
 
