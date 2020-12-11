@@ -50,7 +50,7 @@ const Section = ({ section }) => {
             <div className="sectionDescription">{section.description}</div>
           </div>
           <div className="minimap">
-            <MapaTurystyczna mtUuid={section.mtUuid} horizontalMap basic />
+            <MapaTurystyczna mtUuid={section.mtUuid} horizontalMap basic withLink />
           </div>
         </div>
       )}
