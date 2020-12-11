@@ -5,6 +5,7 @@ import { Container } from '@material-ui/core';
 import HomePage from 'containers/HomePage/Loadable';
 import RulesContainer from 'containers/RulesContainer/Loadable';
 import AboutUsContainer from 'containers/AboutUsContainer/Loadable';
+import PartnersContainer from 'containers/PartnersContainer/Loadable';
 import OwnRouteContainer from 'containers/OwnRouteContainer/Loadable';
 import LoginContainer from 'containers/LoginContainer/Loadable';
 import RegisterContainer from 'containers/RegisterContainer/Loadable';
@@ -26,6 +27,7 @@ export default function App() {
         <PublicRoute exact path="/own_route" component={OwnRouteContainer} />
         <PublicRoute exact path="/rules" component={RulesContainer} />
         <PublicRoute exact path="/us" component={AboutUsContainer} />
+        <PublicRoute exact path="/partners" component={PartnersContainer} />
         <PublicRoute exact path="/subsections/:subsectionId" component={SubsectionContainer} />
         <PublicRoute exact path="/" component={HomePage} />
         <PublicRoute component={NotFoundPage} />

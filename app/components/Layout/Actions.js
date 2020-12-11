@@ -17,6 +17,9 @@ const Actions = () => (
     <Link to="/us">
       <div className="action-button">O NAS</div>
     </Link>
+    <Link to="/partners">
+      <div className="action-button">PARTNERZY</div>
+    </Link>
     <a href="https://www.facebook.com/gssreloaded" target="_blank">
       <img src={FbImage} width="20px" alt="FB logo" />
     </a>

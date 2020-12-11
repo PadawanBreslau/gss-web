@@ -1,0 +1,41 @@
+.ps-content{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ps-sponsors{
+  width: 100%;
+  padding: 2rem;
+  border: slategrey 1px solid;
+  margin: .5rem;
+}
+
+.ps-header{
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+}
+
+.ps-logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+
+.ps-logo{
+  padding-bottom: 1rem;
+  align-self: center;
+  max-width: 10rem;
+}
