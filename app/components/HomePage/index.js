@@ -22,7 +22,7 @@ const HomePage = () => (
       <div className="home-list-element">
         <Eco />
         <span className="element">
-          Droga przebiega przez większość pasm Sudetów, wchodząc na najwyższe szczyty każdych z nich
+          Droga przebiega przez większość pasm Sudetów, wchodząc na najwyższe szczyty każdego z nich
         </span>
       </div>
       <div className="home-list-element">
@@ -33,7 +33,7 @@ const HomePage = () => (
       </div>
       <div className="home-list-element">
         <Eco />
-        <span className="element">Trasa zezwalająca na warianty alternatywne</span>
+        <span className="element">Trasa zezwala na warianty alternatywne</span>
       </div>
     </div>
     <div className="home-mt">

@@ -4,12 +4,12 @@
 }
 
 .rules-header{
-  font-size: x-large;
+  font-size: 1.225rem;
   margin-bottom: 3rem;
   text-indent: 2rem;
 
   @media (max-width: 500px) {
-    font-size: large;
+    font-size: larger;
     margin-bottom: 1rem;
     text-indent: 1rem;
   }
@@ -35,7 +35,14 @@
 }
 
 .rules-list-element{
-  margin-left: 1rem;
+  margin-left: .5rem;
   margin-bottom: 1rem;
+}
 
+.element{
+  margin-left: .5rem;
+}
+
+.ownRoute{
+  text-decoration: underline;
 }

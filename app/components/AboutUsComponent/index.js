@@ -5,20 +5,20 @@ import './us.scss';
 
 const AboutUsComponent = () => (
   <div className="us-content">
-    <div className="us-header">Kim jesteśmy?</div>
     <div className="us-description-with-photo">
       <div className="us-photo">
-        <img src={IrrImage} style={{ width: '100%' }} alt="Irracjonalnie maszerujący" />
+        <img src={IrrImage} style={{ width: '90%' }} alt="Irracjonalnie maszerujący" />
       </div>
       <div className="us-description">
         <span className="us-irr">Irracjonalnie Maszerujący</span>
-        <span className="">
+        <span>
           Jesteśmy grupą pozytywnie zakręconych ludzi, co po górach chodzą, biegają czy nawet
-          jeżdzą. Lubimy też mniej lub bardziej szalone wyzwania. Sporo naszej drupy pochodzi z
-          Dolnego Śląska, więc wiemy, że w kwestii szlaków długodystansowych Główny Szlak Beskidzki
-          i inne długie szlaki mocno ustępują Głównemu Szlakowi Beskidzkiemu. A Sudety same w sobie
-          są przecież przepiękne, piekne gór, przyrody i skomplikowanej historii. Chcesz na poznać
-          lepiej - sprawdz nas na FB:{' '}
+          jeżdzą rowerami. Lubimy uczestniczyć w mniej lub bardziej szalonych wyzwaniach. Większość naszej ekipy pochodzi z
+          Dolnego Śląska, więc wiemy, że w kwestii szlaków długodystansowych Sudety mocno ustępują Beskidom. Jako fani tego rejonu
+          Polski chcieliśmy zaprosić turystów z całego kraju na wyzwanie o podobnym stopniu trudności co ma Główny Szlak Beskidzki.
+        </span>
+        <span>
+          Chcesz na poznać lepiej:{' '}
           <a href="https://www.facebook.com/IrracjonalnieMaszerujacy">
             https://www.facebook.com/IrracjonalnieMaszerujacy
           </a>
