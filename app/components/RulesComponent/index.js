@@ -6,8 +6,8 @@ import './rules.scss';
 const RulesComponent = () => (
   <div className="rules-content">
     <div className="rules-header">
-      Najważniejsze dla nas jest, byście spędzili świetny czas w górach. Ale skoro jest trasa, to
-      na pewno będą chętni by &#39;odznaczyć&#39; swoją obecność czy ustanowić rekord trasy. Dlatego
+      Najważniejsze dla nas jest, byście spędzili świetny czas w górach. Ale skoro jest trasa, to na
+      pewno będą chętni by &#39;odznaczyć&#39; swoją obecność czy ustanowić rekord trasy. Dlatego
       ustaliliśmy kilka arbitralnych zasad nt. przejścia szlaku by mógł być przez nas uznany za
       ukończony lub wliczony do naszych rekordów.
     </div>
@@ -17,14 +17,16 @@ const RulesComponent = () => (
       <div className="rules-list-element">
         <Eco />
         <span className="element">
-          Nie śmiecimy, nie hałasujemy, nie niszczymy przyrody, pomagamy sobie nawzajem i jesteśmy sobie nawzajem przyjaźni.
+          Nie śmiecimy, nie hałasujemy, nie niszczymy przyrody, pomagamy sobie nawzajem i jesteśmy
+          sobie nawzajem przyjaźni.
         </span>
       </div>
       <div className="rules-list-element">
         <Eco />
         <span className="element">
-          Nie oceniamy sposobu, w jaki inni zdobywają szlak. Jedni lubią biegać, drudzy siedzieć wieczorami
-          przy ognisku, jeszcze inni robią 10 zdjęć na każdy kilometr wędrówki. Każdy sposób przejścia trasy jest dobry.
+          Nie oceniamy sposobu, w jaki inni zdobywają szlak. Jedni lubią biegać, drudzy siedzieć
+          wieczorami przy ognisku, jeszcze inni robią 10 zdjęć na każdy kilometr wędrówki. Każdy
+          sposób przejścia trasy jest dobry.
         </span>
       </div>
     </div>
@@ -33,11 +35,15 @@ const RulesComponent = () => (
     <div className="rules-list">
       <div className="rules-list-element">
         <Forward />
-        <span className="element">Należy przejść wszystkie odcinki, z których składa się trasa</span>
+        <span className="element">
+          Należy przejść wszystkie odcinki, z których składa się trasa
+        </span>
       </div>
       <div className="rules-list-element">
         <Forward />
-        <span className="element">Odcinek można przejść wariantem głównym lub wariantem alternatywnym</span>
+        <span className="element">
+          Odcinek można przejść wariantem głównym lub wariantem alternatywnym
+        </span>
       </div>
       <div className="rules-list-element">
         <Forward />
@@ -45,12 +51,17 @@ const RulesComponent = () => (
       </div>
       <div className="rules-list-element">
         <Forward />
-        <span className="element">Trasę można przejść w obie strony. Oficjalnym początkiem jest Bardo</span>
+        <span className="element">
+          Trasę można przejść w obie strony. Oficjalnym początkiem jest Bardo
+        </span>
       </div>
       <div className="rules-list-element">
         <Forward />
         <span className="element">
-          Pozwalamy na własne <Link to="/own_route"><span className='ownRoute'>modyfikacje trasy</span></Link>
+          Pozwalamy na własne{' '}
+          <Link to="/own_route">
+            <span className="ownRoute">modyfikacje trasy</span>
+          </Link>
         </span>
       </div>
     </div>
@@ -63,7 +74,10 @@ const RulesComponent = () => (
       </div>
       <div className="rules-list-element">
         <EmojiEvents />
-        <span className="element">Trasę należy przejść głównym wariantem GSS 2.0, bez wariantów alternatywnych lub własnych modyfikacji</span>
+        <span className="element">
+          Trasę należy przejść głównym wariantem GSS 2.0, bez wariantów alternatywnych lub własnych
+          modyfikacji
+        </span>
       </div>
       <div className="rules-list-element">
         <EmojiEvents />
@@ -85,7 +99,8 @@ const RulesComponent = () => (
         <ThumbUp />
         <span className="element">
           Jeśli chcesz być na liście oficjalnych finisherów GSS 2.0 musisz to w jakiś sposób
-          zweryfikować, jednak wystarczy nam cokolwiek - relacja na stronie internetowej, zdjęcia, pliki z trasą, filmy.
+          zweryfikować, jednak wystarczy nam cokolwiek - relacja na stronie internetowej, zdjęcia,
+          pliki z trasą, filmy.
         </span>
       </div>
       <div className="rules-list-element">

@@ -12,10 +12,11 @@ const AboutUsComponent = () => (
       <div className="us-description">
         <span className="us-irr">Irracjonalnie Maszerujący</span>
         <span>
-          Jesteśmy grupą pozytywnie zakręconych ludzi, co po górach chodzą, biegają czy nawet
-          jeżdzą rowerami. Lubimy uczestniczyć w mniej lub bardziej szalonych wyzwaniach. Większość naszej ekipy pochodzi z
-          Dolnego Śląska, więc wiemy, że w kwestii szlaków długodystansowych Sudety mocno ustępują Beskidom. Jako fani tego rejonu
-          Polski chcieliśmy zaprosić turystów z całego kraju na wyzwanie o podobnym stopniu trudności co ma Główny Szlak Beskidzki.
+          Jesteśmy grupą pozytywnie zakręconych ludzi, co po górach chodzą, biegają czy nawet jeżdzą
+          rowerami. Lubimy uczestniczyć w mniej lub bardziej szalonych wyzwaniach. Większość naszej
+          ekipy pochodzi z Dolnego Śląska, więc wiemy, że w kwestii szlaków długodystansowych Sudety
+          mocno ustępują Beskidom. Jako fani tego rejonu Polski chcieliśmy zaprosić turystów z
+          całego kraju na wyzwanie o podobnym stopniu trudności co ma Główny Szlak Beskidzki.
         </span>
         <span>
           Chcesz na poznać lepiej:{' '}
