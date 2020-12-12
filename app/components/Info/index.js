@@ -6,7 +6,6 @@ import './info.scss';
 const Info = ({ length, totalLength, ascent, descent, trackColor }) => (
   <>
     {length && <div className="subsection-length">{length} km </div>}
-    {totalLength && <div className="subsection-full-length">(&#x2211;{totalLength} km)</div>}
     {ascent && descent && (
       <div className="subsection-heights">
         <div className="subsection-ascent">{ascent}</div>
@@ -14,6 +13,8 @@ const Info = ({ length, totalLength, ascent, descent, trackColor }) => (
         <div className="subsection-descent">{descent}</div>
       </div>
     )}
+    {totalLength && <div className="subsection-length">{totalLength} km</div>}
+
     {trackColor && false && (
       <div className={`subsection-color-${trackColor}`}>
         <DragHandle fontSize="small" />
