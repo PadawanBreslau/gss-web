@@ -21,7 +21,7 @@ const Image = ({ image }) => (
       {image.author && (
         <Tooltip title={authorAndLicence(image)} position="bottom" delay={250}>
           {image.url ? (
-            <a href={image.url} className="author">
+            <a href={image.url} className="author" target="_blank">
               {image.author}
             </a>
           ) : (
