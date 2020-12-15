@@ -57,18 +57,6 @@ const SubsectionComponent = ({ data }) => (
           </div>
         </div>
       </div>
-      <div className="subsection-navigation">
-        {data.previousSubsection && (
-          <Link to={`/subsections/${data.previousSubsection}`}>
-            <span>Poprzedni odcinek</span>
-          </Link>
-        )}
-        {data.nextSubsection && (
-          <Link to={`/subsections/${data.nextSubsection}`}>
-            <span>Następny odcinek</span>
-          </Link>
-        )}
-      </div>
     </div>
   </>
 );
