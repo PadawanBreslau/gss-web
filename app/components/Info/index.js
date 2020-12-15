@@ -24,8 +24,8 @@ const Info = ({ length, totalLength, ascent, descent, trackColor }) => (
 );
 
 Info.propTypes = {
-  length: PropTypes.number,
-  totalLength: PropTypes.number,
+  length: PropTypes.string,
+  totalLength: PropTypes.string,
   ascent: PropTypes.string,
   descent: PropTypes.string,
   trackColor: PropTypes.string,

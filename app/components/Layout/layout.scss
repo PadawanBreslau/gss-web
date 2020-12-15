@@ -22,7 +22,7 @@
 
   @media (max-width: 500px) {
     width: 90%;
-    min-height: 1rem;
+    min-height: 1.75rem;
   }
 }
 
@@ -40,6 +40,14 @@
 .action-button{
   text-transform: capitalize;
 }
+
+.action-button-web{
+  text-transform: capitalize;
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
 
 .actions-links{
   display: flex;

@@ -18,17 +18,11 @@ const Actions = () => (
       <div className="action-button">O NAS</div>
     </Link>
     <Link to="/partners">
-      <div className="action-button">PARTNERZY</div>
+      <div className="action-button-web">PARTNERZY</div>
     </Link>
     <a href="https://www.facebook.com/gssreloaded" target="_blank">
       <img src={FbImage} width="20px" alt="FB logo" />
     </a>
-
-    {false && (
-      <Link to="/charity">
-        <div className="action-button">WSPIERAMY!</div>
-      </Link>
-    )}
   </div>
 );
 
