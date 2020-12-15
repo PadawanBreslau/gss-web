@@ -12,38 +12,37 @@ const HomePage = () => (
     <p className="home-lead">
       <FormattedMessage {...messages.lead} />
     </p>
+
+    <div className="home-mt">
+      <iframe
+        title="Mapa turystyczna"
+        src="https://mapa-turystyczna.pl/map/widget/route/h1l0p0/qf1u.html"
+        height="660"
+        frameBorder="0"
+        width="100%"
+      />
+    </div>
     <div className="home-list">
       <div className="home-list-element">
         <Eco />
         <span className="element">
-          Trasa przeprowadzona w większości po różnych szlakach turystycznych
+          Trasa przeprowadzona po istniejących szlakach turystycznych.
         </span>
       </div>
       <div className="home-list-element">
         <Eco />
         <span className="element">
-          Droga przebiega przez większość pasm Sudetów, wchodząc na najwyższe szczyty każdego z nich
+          Przebiega przez większość pasm i znaczących szczytów Sudetów.
         </span>
       </div>
       <div className="home-list-element">
         <Eco />
-        <span className="element">
-          Trasa została przeprowadzona przez wiele ciekawych historycznie miejsc
-        </span>
+        <span className="element">Miejaca na trasie ciekawe krajobrazowo i historycznie</span>
       </div>
       <div className="home-list-element">
         <Eco />
         <span className="element">Trasa zezwala na warianty alternatywne</span>
       </div>
-    </div>
-    <div className="home-mt">
-      <iframe
-        title="Mapa turystyczna"
-        src="https://mapa-turystyczna.pl/map/widget/route/h1l0p0/qf1u.html"
-        height="680"
-        frameBorder="0"
-        width="100%"
-      />
     </div>
   </div>
 );

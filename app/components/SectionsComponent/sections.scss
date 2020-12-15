@@ -1,7 +1,6 @@
 @import '../../styles/colors.scss';
 
 .sections{
-  background-color: $haze;
   display: flex;
   justify-content: space-around;
   align-items: space-around;
@@ -11,12 +10,17 @@
   border-radius: 1rem;
   margin: auto;
   padding: 1rem;
+  @media (max-width: 500px) {
+    padding: .225rem;
+
+  }
 }
 
 .section{
+  background-color: rgba(#538083, .15);
+
   border: 1px solid;
   border-radius: 20px;
-  background-color: $haze;
   width: 100%;
   padding: .825rem;
   margin-top: .5rem;
@@ -138,7 +142,6 @@
 }
 
 .subsection-title{
-  background-color: $haze;
   min-width: 25rem;
   padding-left: .225rem;
   font-size: .9rem;
