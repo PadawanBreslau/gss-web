@@ -50,14 +50,17 @@ const SubsectionComponent = ({ data }) => (
           )}
         </div>
         <div className="trivia-and-utilities">
-          <div className="subsection-utilities">
-            {data.utilities &&
-              data.utilities.map((utility) => <Utility utility={utility} key={utility.id} />)}
+          {data.utilities && <div className="subsection-utilities">
+            {data.utilities.map((utility) => <Utility utility={utility} key={utility.id} />)}
           </div>
+          }
           <div className="subsection-trivia">
-            <span className="triviaLabel">Ciekawostki</span>
-            {data.trivia &&
-              data.trivia.map((trivium) => <Trivium trivium={trivium} key={trivium.id} />)}
+            {data.trivia && data.trivia.length > 0 &&
+              <>
+                <span className="triviaLabel">Ciekawostki</span>
+                <>{data.trivia.map((trivium) => <Trivium trivium={trivium} key={trivium.id} />)}</>
+              </>
+            }
           </div>
         </div>
       </div>
