@@ -32,7 +32,9 @@ const SubsectionComponent = ({ data }) => (
           </div>
         )}
         {descriptionToArray(data.description)?.map((block) => (
-          <div className="text-block" key={block}>{block}</div>
+          <div className="text-block" key={block}>
+            {block}
+          </div>
         ))}
       </div>
       <div
@@ -49,11 +51,13 @@ const SubsectionComponent = ({ data }) => (
         </div>
         <div className="trivia-and-utilities">
           <div className="subsection-utilities">
-            {data.utilities && data.utilities.map((utility) => <Utility utility={utility} key={utility.id} />)}
+            {data.utilities &&
+              data.utilities.map((utility) => <Utility utility={utility} key={utility.id} />)}
           </div>
           <div className="subsection-trivia">
-            <span className='triviaLabel'>Ciekawostki</span>
-            {data.trivia && data.trivia.map((trivium) => <Trivium trivium={trivium} key={trivium.id} />)}
+            <span className="triviaLabel">Ciekawostki</span>
+            {data.trivia &&
+              data.trivia.map((trivium) => <Trivium trivium={trivium} key={trivium.id} />)}
           </div>
         </div>
       </div>
