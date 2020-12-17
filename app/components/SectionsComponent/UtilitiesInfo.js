@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Hotel, Fastfood, Store, Commute } from '@material-ui/icons';
+import Hotel from '../Utility/Hotel';
+import Food from '../Utility/Food';
+import Shop from '../Utility/Shop';
+import Transport from '../Utility/Transport';
 import './sections.scss';
 
 const Utilities = ({ utilities }) => {
@@ -26,26 +29,10 @@ const Utilities = ({ utilities }) => {
 
   return (
     <>
-      {accommodation && (
-        <div className="utility">
-          <Hotel fontSize="small" />
-        </div>
-      )}
-      {food && (
-        <div className="utility">
-          <Fastfood fontSize="small" />
-        </div>
-      )}
-      {shop && (
-        <div className="utility">
-          <Store fontSize="small" />
-        </div>
-      )}
-      {transport && (
-        <div className="utility">
-          <Commute fontSize="small" />
-        </div>
-      )}
+      { accommodation && <Hotel fontSize="small" />}
+      { food && <Food fontSize="small" />}
+      { shop && <Shop fontSize="small" /> }
+      { transport && <Transport fontSize="small" />}
     </>
   );
 };
