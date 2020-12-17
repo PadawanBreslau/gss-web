@@ -10,7 +10,7 @@ const Image = ({ image }) => (
   <div className="image">
     <div className="picture">
       <img
-        src={config.api.url + image?.pictureMedium}
+        src={config.api.url + image?.pictureLarge}
         className="imageDisplay"
         alt="Obrazek z odcinka"
       />

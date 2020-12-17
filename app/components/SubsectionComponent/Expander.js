@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { ChevronRight, ChevronLeft } from '@material-ui/icons';
 
 const Expander = ({ setter, value, label }) => (
-  <div className="expandable-title" onClick={() => setter(!value)}>
+  <div className="expandable-subtitle" onClick={() => setter(!value)}>
     <div className="section-chevron">
       {value ? <ChevronLeft fontSize="large" /> : <ChevronRight fontSize="large" />}
     </div>

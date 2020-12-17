@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { ChevronRight, ChevronLeft } from '@material-ui/icons';
-import Utility from '../Utility';
+import Utilities from './Utilities';
 import Trivium from '../Trivium';
 import MapaTurystyczna from '../MapaTurystyczna';
 import Image from '../Image';
@@ -33,7 +32,7 @@ const SubsectionComponent = ({ data }) => {
           ))}
         </div>
 
-        <Expander setter={setMapVisible} value={mapVisible} label={"Mapa"} />
+        <Expander setter={setMapVisible} value={mapVisible} label="Mapa" />
 
         {mapVisible && (
           <div className="subsection-mt">
@@ -43,37 +42,23 @@ const SubsectionComponent = ({ data }) => {
           </div>
         )}
 
-        <Expander setter={setUtilitiesVisible} value={utilitiesVisible} label={"Noclegi, jedzenie i inne"} />
+        <Expander
+          setter={setUtilitiesVisible}
+          value={utilitiesVisible}
+          label="Noclegi, jedzenie i inne"
+        />
 
-       { utilitiesVisible &&
-        <div className="trivia-and-utilities">
-          {data.utilities && (
-            <div className="subsection-utilities">
-              {data.utilities.map((utility) => (
-                <Utility utility={utility} key={utility.id} />
-              ))}
-            </div>
-          )}
-        </div>
-        }
+        {utilitiesVisible && <Utilities utilities={data.utilities} />}
 
-        <Expander setter={setTriviaVisible} value={triviaVisible} label={"Ciekawostki"} />
+        <Expander setter={setTriviaVisible} value={triviaVisible} label="Ciekawostki" />
 
-
-        { triviaVisible &&
-        <div className="subsection-trivia">
-          {data.trivia && data.trivia.length > 0 && (
-            <>
-              <span className="triviaLabel">Ciekawostki</span>
-              <>
-                {data.trivia.map((trivium) => (
-                  <Trivium trivium={trivium} key={trivium.id} />
-                ))}
-              </>
-            </>
-          )}
-        </div>
-        }
+        {triviaVisible && data.trivia && data.trivia.length > 0 && (
+          <div className="subsection-trivia">
+            {data.trivia.map((trivium) => (
+              <Trivium trivium={trivium} key={trivium.id} />
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

@@ -53,6 +53,11 @@
   vertical-align: middle;
 }
 
+.expandable-title:hover{
+  cursor: pointer;
+}
+
+
 .sectionWithMap{
   display: flex;
   flex-direction: row;

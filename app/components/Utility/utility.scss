@@ -5,13 +5,13 @@
   background-color: $haze;
   border: 1px solid;
   border-radius: 12px;
-  min-width: 15rem;
+  min-width: 19.5rem;
   max-height: 12rem;
-  margin-left: .85rem;
+  margin-left: .5rem;
   margin-top: .225rem;
   margin-bottom: .5rem;
 
-    a {
+  a {
     font-weight: 600;
     font-size: large;
     color: $graphite;
@@ -20,6 +20,10 @@
       font-weight: 800;
       text-decoration: underline;
     }
+  }
+
+  @media (max-width: 500px) {
+    min-width: 17rem;
   }
 }
 
