@@ -8,7 +8,6 @@
   @media (max-width: 500px) {
     padding: .825rem;
   }
-
 }
 
 .subsection-view-title{
@@ -27,73 +26,6 @@
   flex-direction: row;
 }
 
-.subsection-description-with-photo{
-  margin-top: 2rem;
-  text-indent: 1.5em;
-  font-size: 1.225rem;
-  line-height: 1.4rem;
-
-  @media (max-width: 500px) {
-    margin-top: .8rem;
-    text-indent: 1em;
-    line-height: 1.4rem;
-    font-size: 1rem;
-  }
-}
-
-.subsection-mt{
-  flex-direction: row;
-  flex: 6;
-}
-
-.trivia-and-utilities{
-  flex: 5;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: flex-start;
-  padding-left: .5rem;
-
-  @media (max-width: 500px) {
-    padding-left: 0
-  }
- }
-
-.subsection-utilities{
-  flex: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  @media (max-width: 500px) {
-    margin-top: 1.5rem;
-  }
-}
-
-.subsection-trivia{
-  justify-self: start;
-  margin-top: .825rem;
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-content: flex-start;
-  align-items: stretch;
-  flex-wrap: wrap;
-  width: 90%;
-  @media (max-width: 500px) {
-    margin-top: 1.5rem;
-  }
-}
-
-.triviaLabel{
-  text-align: center;
-  font-size: larger;
-  font-weight: 600;
-}
-
 .float{
   float: right;
   margin-left: 1rem;
@@ -110,24 +42,30 @@
   margin-bottom: .5rem;
 }
 
-.subsection-map-utilities-horizontal{
-  margin-top: .5rem;
-  display: flex;
-  flex-direction: column;
-}
 
-.subsection-map-utilities-vertical{
-  margin-top: .5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+.section-chevron{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  vertical-align: middle;
   @media (max-width: 500px) {
-    flex-direction: column;
+    margin-left: .5rem;
+    margin-right: .5rem;
   }
 }
 
-.subsection-navigation{
-  margin-top: 2rem;
+.expandable-title{
+  font-size: larger;
+  font-weight: 600;
+  width: 80%;
+  border: 1px dashed;
   text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    min-width: 300px;
+  }
 }
