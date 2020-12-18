@@ -9,7 +9,7 @@
   align-items: center;
   border-radius: 1rem;
   margin: auto;
-  padding: 1rem;
+  padding: .1rem;
   @media (max-width: 500px) {
     padding: .225rem;
 
@@ -72,6 +72,7 @@
   flex:1;
   max-height: 10rem;
   @media (max-width: 500px) {
+    width: 85%;
     min-height: 320px;
   }
 }
@@ -168,3 +169,9 @@
 .utility{
   margin-left: 5px;
 }
+
+.subsection-utilities{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+ }

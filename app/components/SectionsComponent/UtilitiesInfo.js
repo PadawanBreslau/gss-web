@@ -28,12 +28,12 @@ const Utilities = ({ utilities }) => {
     utilities.some((ut) => ut.utilityType === 'bus_stop' || ut.utilityType === 'train_station');
 
   return (
-    <>
-      { accommodation && <Hotel fontSize="small" />}
-      { food && <Food fontSize="small" />}
-      { shop && <Shop fontSize="small" /> }
-      { transport && <Transport fontSize="small" />}
-    </>
+    <div className='subsection-utilities'>
+      {accommodation && <Hotel fontSize="small" />}
+      {food && <Food fontSize="small" />}
+      {shop && <Shop fontSize="small" />}
+      {transport && <Transport fontSize="small" />}
+    </div>
   );
 };
 

@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import config from 'config';
 import { Tooltip } from 'react-tippy';
+import { Phone, Public } from '@material-ui/icons';
 import Hotel from './Hotel';
 import Food from './Food';
 import Shop from './Shop';
 import Transport from './Transport';
-import { Phone, Public } from '@material-ui/icons';
 import { accommodation, food, shop, transport } from './utilityType';
 import './utility.scss';
 
@@ -14,10 +14,10 @@ const Utility = ({ utility }) => (
   <div className="utility-box">
     <div className="utility-title">
       <span>{utility.name}</span>
-      {accommodation(utility) && <Hotel fontSize="medium"/>}
-      {food(utility) && <Food fontSize="medium"/>}
-      {shop(utility) && <Shop fontSize="medium"/>}
-      {transport(utility) && <Transport fontSize="medium"/>}
+      {accommodation(utility) && <Hotel fontSize="medium" />}
+      {food(utility) && <Food fontSize="medium" />}
+      {shop(utility) && <Shop fontSize="medium" />}
+      {transport(utility) && <Transport fontSize="medium" />}
     </div>
     <div className="utility-address">{utility.address}</div>
     <div className="utility-address-and-photo">

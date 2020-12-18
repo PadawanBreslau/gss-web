@@ -12,7 +12,7 @@ const MapaTurystyczna = ({ mtUuid, horizontalMap, basic, withLink }) => (
           href={`https://mapa-turystyczna.pl/route/${mtUuid}?utm_source=external_web&amp;utm_medium=widget&amp;utm_campaign=route_widget`}
           target="_blank"
         >
-          <span className="mt-link"> Otwórz na stronie Mapy Turystycznej</span>
+          <div className="mt-link"> Otwórz na stronie Mapy Turystycznej</div>
         </a>
       )}
     </div>

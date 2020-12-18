@@ -36,6 +36,9 @@
 
 .icon{
   margin-left: .425rem;
+  @media (max-width: 500px) {
+    margin-left: .1rem;
+  }
 }
 
 .utility-address{

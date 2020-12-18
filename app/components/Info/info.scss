@@ -4,39 +4,44 @@
   margin-left: .5rem;
   align-items: center;
   width: 4.25rem;
-
   @media (max-width: 500px) {
+    width: 3.8rem;
     margin-left: .225rem;
     font-size: .75rem;
   }
 }
 
 .subsection-ascent{
-  margin-left: 1.225rem;
-  width: 2.25rem;
+  margin-left: 1rem;
+  margin-right: .1rem;
+  width: 3rem;
   @media (max-width: 500px) {
     margin-left: .225rem;
   }
   text-align: right;
 }
 
+.subsection-descent{
+  width: 3rem;
+  margin-right: .25rem;
+  text-align: left;
+  @media (max-width: 500px) {
+    margin-left: -.8rem;
+  }
+}
+
 .subsection-heights{
-  min-width: 4rem ;
+  min-width: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
 
   @media (max-width: 500px) {
+    min-width: auto;
     margin-left: .225rem;
     font-size: .75rem;
   }
 }
-
-.subsection-descent{
-  width: 2.25rem;
-  margin-right: .5rem;
-}
-
 
 .subsection-color-blue{
   color: $blue;

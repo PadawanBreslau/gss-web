@@ -8,9 +8,9 @@ const Info = ({ length, totalLength, ascent, descent, trackColor }) => (
     {length && <div className="subsection-length">{length} km </div>}
     {ascent && descent && (
       <div className="subsection-heights">
-        <div className="subsection-ascent">{ascent}</div>
+        <div className="subsection-ascent">{ascent}m</div>
         <ImportExport fontSize="small" />
-        <div className="subsection-descent">{descent}</div>
+        <div className="subsection-descent">{descent}m</div>
       </div>
     )}
     {totalLength && <div className="subsection-length">{totalLength} km</div>}
