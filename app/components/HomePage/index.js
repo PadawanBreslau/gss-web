@@ -37,7 +37,9 @@ const HomePage = () => (
       </div>
       <div className="home-list-element">
         <Star />
-        <span className="element">Miejsca na trasie ciekawe krajobrazowo i historycznie</span>
+        <span className="element">
+          Trasa prowadzi przez miejsca ciekawe krajobrazowo i historycznie
+        </span>
       </div>
       <div className="home-list-element">
         <Star />
