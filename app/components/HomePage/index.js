@@ -23,11 +23,31 @@ const HomePage = () => (
         width="100%"
       />
     </div>
-    <div className='home-downloads'>
-      <div className='home-track'><a href='/gss20-full-official.gpx'><GetApp />Całość trasy GSS 2.0</a></div>
-      <div className='home-track'><a href='/gss20-bardo-duszniki-official.gpx'><GetApp />GSS 2.0: Bardo - Duszniki-Zdrój</a></div>
-      <div className='home-track'><a href='/gss20-duszniki-mieroszow-official.gpx'><GetApp />GSS 2.0: Duszniki-Zdrój - Mieroszów</a></div>
-      <div className='home-track'><a href='/gss20-mieroszow-czerniawa-official.gpx'><GetApp />GSS 2.0: Mieroszów - Czernica-Zdrój</a></div>
+    <div className="home-downloads">
+      <div className="home-track">
+        <a href="/gss20-full-official.gpx" target="_blank" download>
+          <GetApp />
+          Całość trasy GSS 2.0
+        </a>
+      </div>
+      <div className="home-track">
+        <a href="/gss20-bardo-duszniki-official.gpx" target="_blank" download>
+          <GetApp />
+          GSS 2.0: Bardo - Duszniki-Zdrój
+        </a>
+      </div>
+      <div className="home-track">
+        <a href="/gss20-duszniki-mieroszow-official.gpx" target="_blank" download>
+          <GetApp />
+          GSS 2.0: Duszniki-Zdrój - Mieroszów
+        </a>
+      </div>
+      <div className="home-track">
+        <a href="/gss20-mieroszow-czerniawa-official.gpx" target="_blank" download>
+          <GetApp />
+          GSS 2.0: Mieroszów - Czernica-Zdrój
+        </a>
+      </div>
     </div>
     <div className="home-list">
       <div className="home-list-element">
