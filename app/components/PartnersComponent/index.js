@@ -4,6 +4,7 @@ import ProbitImage from 'images/probit.png';
 import VisuImage from 'images/visu.png';
 import IrrImage from 'images/irr.png';
 import ZielonyImage from 'images/zielony.png';
+import MTLogo from 'images/mt.svg';
 import Logo from './Logo';
 
 const PartnersComponent = () => (
@@ -24,6 +25,7 @@ const PartnersComponent = () => (
           url="https://www.facebook.com/IrracjonalnieMaszerujacy"
         />
         <Logo image={ZielonyImage} alt="Zielony z wyboru" url="https://zieloniwpodrozy.pl/" />
+        <Logo image={MTLogo} alt="Mapa Turystyczna" url="https://mapa-turystyczna.pl/" />
       </div>
     </div>
   </div>
