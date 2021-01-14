@@ -8,10 +8,12 @@ import Info from '../Info';
 import './sections.scss';
 
 const Section = ({ section }) => {
+  const { variation } = section;
   const [subsectionVisible, setSubsectionVisible] = useState(false);
+  const className = `section-${variation}`;
 
   return (
-    <div className="section">
+    <div className={className}>
       <div className="title">
         <div className="expandable-title" onClick={() => setSubsectionVisible(!subsectionVisible)}>
           <div className="section-title">
