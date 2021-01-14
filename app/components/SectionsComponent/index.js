@@ -5,9 +5,7 @@ import './sections.scss';
 
 const SectionsComponent = ({ data }) => {
   const [alternativesVisible, setAlternativesVisible] = useState(true);
-  const label = alternativesVisible
-    ? 'Schowaj warianty alternatywne'
-    : 'Pokaż warianty alternatywne';
+  const label = 'Pokaż warianty alternatywne';
 
   return (
     <div>
