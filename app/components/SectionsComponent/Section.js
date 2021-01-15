@@ -31,12 +31,17 @@ const Section = ({ section }) => {
           </div>
         </div>
         <div className="allinfo">
-          <Info
-            length={section.length}
-            totalLength={section.totalLength}
-            ascent={section.ascent}
-            descent={section.descent}
-          />
+          {variation === 'main' && (
+            <Info
+              length={section.length}
+              totalLength={section.totalLength}
+              ascent={section.ascent}
+              descent={section.descent}
+            />
+          )}
+          {variation !== 'main' && (
+            <Info length={section.length} ascent={section.ascent} descent={section.descent} />
+          )}
         </div>
         {false && (
           <span className="open-with">
