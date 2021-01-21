@@ -4,6 +4,7 @@ import ProbitImage from 'images/probit.png';
 import VisuImage from 'images/visu.png';
 import IrrImage from 'images/irr.png';
 import ZielonyImage from 'images/zielony.png';
+import GWImage from 'images/gw.jpg';
 import MTLogo from 'images/mt.svg';
 import Logo from './Logo';
 
@@ -26,6 +27,7 @@ const PartnersComponent = () => (
         />
         <Logo image={ZielonyImage} alt="Zielony z wyboru" url="https://zieloniwpodrozy.pl/" />
         <Logo image={MTLogo} alt="Mapa Turystyczna" url="https://mapa-turystyczna.pl/" />
+        <Logo image={GWImage} alt="Górskie Wyrypy" url="https://gorskiewyrypy.pl/" />
       </div>
     </div>
   </div>
