@@ -11,13 +11,14 @@
 
 .menu{
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin: auto;
   margin-top: 1rem;
   min-height: 2.5rem;
-  width: 60%;
+  width: 90%;
   text-align: center;
 
   @media (max-width: 500px) {
@@ -26,16 +27,22 @@
   }
 }
 
-.logo{
-  font-size: x-large;
-  font-weight: 600;
-  display: none;
-  color: $graphite;
+.actions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
 }
 
-.actions{
-  flex: 2;
+.logo{
+  margin-top: -3rem;
+  flex: 1;
+  height: 10rem;
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
+
 
 .action-button{
   text-transform: capitalize;
@@ -50,13 +57,15 @@
 
 
 .actions-links{
+  margin-top: 1rem;
   display: flex;
+  flex: 3;
   flex-direction: row;
   justify-content: space-around;
 
   a {
     font-weight: 600;
-    font-size: x-large;
+    font-size: 2rem;
 
     &:hover {
       font-weight: 800;

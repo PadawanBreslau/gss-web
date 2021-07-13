@@ -6,9 +6,6 @@ import './layout.scss';
 const Layout = (props) => (
   <div className="page">
     <div className="menu">
-      <div className="logo">
-        <h1>GSS 2.0</h1>
-      </div>
       <div className="actions">
         <Actions />
       </div>
