@@ -2,7 +2,6 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Star, GetApp } from '@material-ui/icons';
 import messages from './messages';
-import config from '../../config';
 import './homepage.scss';
 
 const HomePage = () => (
@@ -17,7 +16,7 @@ const HomePage = () => (
     <div className="home-mt">
       <iframe
         title="Mapa turystyczna"
-        src="https://mapa-turystyczna.pl/map/widget/route/h1l0p1/u9gl.html"
+        src="https://mapa-turystyczna.pl/map/widget/route/h1l0p0/p67e.html"
         height="660"
         frameBorder="0"
         width="100%"
@@ -25,12 +24,13 @@ const HomePage = () => (
     </div>
     <div className="home-downloads">
       <div className="home-track">
-        <a href="/gss20-full-official.gpx" target="_blank" download>
+        <a href="/gss20-full-official-2022.gpx" target="_blank" download>
           <GetApp />
-          Całość trasy GSS 2.0
+          Całość trasy GSS 2.0 (po poprawkach)
         </a>
       </div>
-      <div className="home-track">
+      {false &&
+      (<><div className="home-track">
         <a href="/gss20-bardo-duszniki-official.gpx" target="_blank" download>
           <GetApp />
           GSS 2.0: Bardo - Duszniki-Zdrój
@@ -47,7 +47,7 @@ const HomePage = () => (
           <GetApp />
           GSS 2.0: Mieroszów - Czernica-Zdrój
         </a>
-      </div>
+      </div></>)}
     </div>
     <div className="home-list">
       <div className="home-list-element">
@@ -67,10 +67,6 @@ const HomePage = () => (
         <span className="element">
           Trasa prowadzi przez miejsca ciekawe krajobrazowo i historycznie
         </span>
-      </div>
-      <div className="home-list-element">
-        <Star />
-        <span className="element">Trasa zezwala na warianty alternatywne</span>
       </div>
     </div>
   </div>

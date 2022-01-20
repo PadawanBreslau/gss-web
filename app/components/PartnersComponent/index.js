@@ -1,5 +1,6 @@
 import React from 'react';
 import './partners.scss';
+import PoltraxImage from 'images/poltrax.png';
 import ProbitImage from 'images/probit.png';
 import VisuImage from 'images/visu.png';
 import IrrImage from 'images/irr.png';
@@ -13,6 +14,7 @@ const PartnersComponent = () => (
     <div className="ps-sponsors">
       <div className="ps-header">Wspierają nasz projekt</div>
       <div className="ps-logos">
+        <Logo image={PoltraxImage} alt="Poltrax" url="https://poltrax.live/" />
         <Logo image={ProbitImage} alt="Probit" url="https://probit.com.pl/" />
         <Logo image={VisuImage} alt="Visuality" url="https://visuality.pl/" />
       </div>

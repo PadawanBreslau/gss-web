@@ -1,0 +1,42 @@
+.fkt-content{
+  margin: auto;
+  width: 60%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.fkt-header{
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fkt-who{
+  font-size: large;
+  font-weight: 600;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+
+.fkt-how-much{
+  font-size: larger;
+  margin-right: 1rem;
+}
+
+.fkt-when{
+  font-size: larger;
+  margin-right: 1rem;
+}
+
+.fkt-url{
+  font-size: large;
+  font-weight: 600;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
