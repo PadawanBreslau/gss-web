@@ -41,7 +41,7 @@ const Section = ({ section }) => {
           </span>
         )}
       </div>
-      {subsectionVisible && false && (
+      {false && (
         <div className="sectionWithMap">
           <div className="subsectionWithDescription">
             <div className="subsections">
